@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>공장 바닥 에폭시 도장공사 | 평당 93,628원~ · 정부지원 최대 70% - 주영산업</title>
-<meta name="description" content="전문도장건설면허 보유, 하청 없이 직접 시공합니다. 0.3mm~3.0mm 두께 선택, 평당 93,628원부터. 현장 실측·견적 무료. 2026 클린사업 최대 70% 지원. 사업자등록증 1장과 현장사진 4~6장이면 무료 검토." />
+<meta name="description" content="전문도장건설면허 보유, 하청 없이 직접 시공합니다. 0.3mm~3.0mm 두께 선택, 평당 93,628원부터. 현장 실측·견적 무료. 2026 클린사업 최대 70%(한도 3,000만원) 지원. 사업자등록증 1장과 현장사진 4~6장이면 무료 검토." />
 <meta property="og:title" content="공장 바닥 에폭시 도장공사 · 정부지원 최대 70%" />
 <meta property="og:description" content="평당 93,628원부터. 전문도장건설면허 직접시공. 실측·견적 무료." />
 <meta property="og:image" content="images/hero.jpg" />
@@ -62,7 +62,12 @@ const CFG = {
     ["하청을 주시나요?",
      "아닙니다. 주영산업은 <b>전문도장건설면허를 직접 보유</b>하고 있어 하청 없이 <b>자사 인력이 직접 시공</b>합니다. 하자 발생 시 책임 소재가 분명합니다."],
     ["정부지원으로 할 수 있나요?",
-     "가능합니다. <b>2026 안전보건공단 클린사업</b>으로 바닥도장공사를 진행하는 사업장이 많습니다. 지원율은 <b>최대 70%</b>입니다. (경기도 작업환경개선사업은 <b>2028년 시행 예정</b>이라 현재는 신청할 수 없습니다.)"],
+     "가능합니다. <b>2026 안전보건공단 클린사업</b>으로 바닥도장공사를 진행하는 사업장이 많습니다. " +
+     "지원율은 <b>최대 70%</b>이고, <b>보조금 한도는 사업장당 최대 3,000만원</b>입니다.<br>" +
+     "· 공사비 <b>3,000만원</b> → 보조금 2,100만원 / 자부담 900만원<br>" +
+     "· 공사비 <b>1억원</b> → 70%는 7,000만원이지만 <b>한도 3,000만원까지만</b> 지원 → 자부담 7,000만원<br>" +
+     "즉 공사비가 <b>약 4,286만원</b>을 넘어가면 그때부터는 보조금이 3,000만원으로 고정됩니다. " +
+     "(경기도 작업환경개선사업은 <b>2028년 시행 예정</b>이라 현재는 신청할 수 없습니다.)"],
     ["검토받으려면 뭘 보내야 하나요?",
      "딱 두 가지만 보내주시면 됩니다.<br>① <b>사업자등록증 1장</b><br>② <b>현장 사진 4~6장</b> — <b>바닥 전체가 보이는 사진 2~3장</b>(공장 전경·통로 포함)과 <b>깨진 곳 · 기름이 있는 곳을 가까이 찍은 사진 2~3장</b>입니다.<br>사진이 있어야 보수 범위와 적정 두께를 판단해 <b>지원 가능 여부와 예상 자부담금을 정확히</b> 알려드릴 수 있습니다. 신청서 작성·접수는 저희가 전부 대행합니다."],
     ["색상도 고를 수 있나요?",
@@ -222,6 +227,10 @@ h2 em{font-style:normal;color:var(--or)}
 .cout .main .v{color:var(--or2)}
 .cout .gov{background:rgba(19,160,106,.14);border:1px solid rgba(19,160,106,.45)}
 .cout .gov .v{color:#4ddba0}
+.cout .sub2 .v{color:#8fd7ff}
+#oCapTag{display:inline-block;font-size:10.5px;font-weight:900;color:#fff;background:#e8590c;
+  border-radius:6px;padding:2px 6px;margin-left:5px;letter-spacing:-.02em;vertical-align:middle}
+#oCapTag:empty{display:none}
 .cnote{margin-top:16px;font-size:12.8px;color:#9aa6b4;text-align:center;line-height:1.75}
 
 /* 단가표 */
@@ -439,7 +448,7 @@ footer a{color:#c9d1dc}
 
     <div class="h-chips">
       <span class="chip">두께 <b>0.3 ~ 3.0mm</b> 선택</span>
-      <span class="chip">정부지원 <b>최대 70%</b></span>
+      <span class="chip">정부지원 <b>최대 70%</b> · 한도 <b>3,000만원</b></span>
       <span class="chip">실측·견적 <b>전액 무료</b></span>
       <span class="chip">사업자등록증 <b>1장</b>이면 검토</span>
     </div>
@@ -449,7 +458,7 @@ footer a{color:#c9d1dc}
 <div class="band"><div class="in">
   <div class="c"><div class="n">평당 93,628원~</div><div class="l">0.3mm 코팅형 기준</div></div>
   <div class="c"><div class="n">0.3 ~ 3.0mm</div><div class="l">4가지 두께 선택</div></div>
-  <div class="c"><div class="n">최대 70%</div><div class="l">정부지원 비율</div></div>
+  <div class="c"><div class="n">최대 70%</div><div class="l">한도 3,000만원</div></div>
   <div class="c"><div class="n">직접시공</div><div class="l">전문도장건설면허 보유</div></div>
 </div></div>
 
@@ -489,11 +498,14 @@ footer a{color:#c9d1dc}
       <div class="cout">
         <div class="main"><div class="k">예상 공사비 (공급가액)</div><div class="v" id="oTot">-</div></div>
         <div><div class="k">부가세 10% (별도)</div><div class="v" id="oVat">-</div></div>
-        <div class="gov"><div class="k">정부지원 최대 70% 적용 시 자부담</div><div class="v" id="oSelf">-</div></div>
+        <div class="sub2"><div class="k">정부지원 70% <span id="oCapTag"></span></div><div class="v" id="oGov">-</div></div>
+        <div class="gov"><div class="k">정부지원 적용 시 자부담</div><div class="v" id="oSelf">-</div></div>
         <div><div class="k">㎡당 단가</div><div class="v" id="oM2">-</div></div>
       </div>
 
       <div class="cnote">※ 위 금액은 <b style="color:#fff">평당 단가 × 면적</b>으로 계산한 <b style="color:#fff">참고용 추정치</b>입니다.<br>
+        ※ 보조금은 공사비의 <b style="color:#fff">최대 70%</b>이며, <b style="color:#fff">사업장당 최대 3,000만원</b>까지만 지원됩니다.
+        공사비가 커서 70%가 3,000만원을 넘으면 <b style="color:#fff">3,000만원까지만 지원</b>되고 나머지는 자부담입니다.<br>
         실제 견적은 ㎡ 단가 기준으로 <b style="color:#fff">현장 실측 후 확정</b>되며, 바닥 상태·보수 범위에 따라 달라집니다.</div>
 
       <a class="btn btn-pri btn-lg" href="#apply" data-cta="calc" style="margin-top:20px">이 조건으로 정확한 견적 받기</a>
@@ -587,6 +599,7 @@ footer a{color:#c9d1dc}
         <div class="s">안전보건공단 작업환경개선 지원사업</div>
         <dl>
           <dt>지원율</dt><dd class="hi">최대 70%</dd>
+          <dt>지원 한도</dt><dd class="hi">최대 3,000만원</dd>
           <dt>대상</dt><dd>고위험 작업장</dd>
           <dt>신청시기</dt><dd>상시 (마감 임박)</dd>
         </dl>
@@ -743,7 +756,7 @@ footer a{color:#c9d1dc}
     <div style="margin-top:14px;font-size:12.4px;color:#6b7684">
       ※ 모든 금액은 공급가액 기준이며 부가세는 별도입니다. 세금계산서는 의무 발행됩니다.<br>
       ※ 평당 단가는 1평 = 3.3058㎡로 환산한 참고 금액이며, 실제 견적은 현장 실측 후 ㎡ 단가 기준으로 확정됩니다.<br>
-      ※ 클린사업 지원율은 최대 70%이며, 지원 대상·비율·한도는 사업 공고 및 심사 결과에 따라 달라질 수 있습니다.<br>※ 경기도 작업환경개선사업은 2028년 시행 예정으로 현재 신청이 불가합니다.
+      ※ 클린사업 지원율은 최대 70%이며, 보조금 한도는 사업장당 최대 3,000만원입니다. 지원 대상·비율·한도는 사업 공고 및 심사 결과에 따라 달라질 수 있습니다.<br>※ 경기도 작업환경개선사업은 2028년 시행 예정으로 현재 신청이 불가합니다.
     </div>
   </div>
 </footer>
@@ -802,9 +815,14 @@ footer a{color:#c9d1dc}
     $('#aVal').textContent  = py.toLocaleString('ko-KR')+'평';
     $('#aM2').textContent   = '= ' + Math.round(py*PY).toLocaleString('ko-KR') + '㎡ (1평 = 3.3058㎡)';
     $('#mVal').textContent  = s.mm+'mm';
+    const GOV_CAP = 30000000;                 // 보조금 최대 한도 3,000만원
+    const govRaw  = tot * 0.7;
+    const gov     = Math.min(govRaw, GOV_CAP);
     $('#oTot').textContent  = man(tot);
     $('#oVat').textContent  = man(tot*0.1);
-    $('#oSelf').textContent = man(tot*0.3);
+    $('#oGov').textContent  = man(gov);
+    $('#oCapTag').textContent = (govRaw > GOV_CAP) ? '한도 3,000만원 적용' : '';
+    $('#oSelf').textContent = man(tot - gov);
     $('#oM2').textContent   = Math.round(s.price/PY).toLocaleString('ko-KR')+'원';
   }
   ar.addEventListener('input',calc);
