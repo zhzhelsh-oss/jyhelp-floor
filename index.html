@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>공장 바닥 에폭시 도장공사 | 평당 93,628원~ · 정부지원 70~90% - 주영산업</title>
+<meta name="description" content="전문도장건설면허 보유, 하청 없이 직접 시공합니다. 0.3mm~3.0mm 두께 선택, 평당 93,628원부터. 현장 실측·견적 무료. 2026 클린사업·경기도 작업환경개선사업으로 최대 90% 지원." />
+<meta property="og:title" content="공장 바닥 에폭시 도장공사 · 정부지원 70~90%" />
+<meta property="og:description" content="평당 93,628원부터. 전문도장건설면허 직접시공. 실측·견적 무료." />
+<meta property="og:image" content="images/hero.jpg" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪣</text></svg>" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+<!-- ====================================================================== -->
+<!--  [1] 페이지 설정                                                         -->
+<!-- ====================================================================== -->
+<script>
+const CFG = {
+  brand:   "주영산업",
+  bizName: "주식회사 도미넌트 (주영산업)",
+  phone:   "010-3456-2185",
+  contact: "이수오 팀장",
+  year:    "2026",
+
+  // 평당 단가 (공급가액 · 부가세 별도) — 1평 = 3.3058㎡
+  specs: [
+    { mm:"0.3", key:"0.3mm", price:93628,  type:"코팅형 · 얇은 도막", tagline:"가성비 · 빠른 시공",
+      good:["빠른 시공, 경제적인 비용","청소·관리 용이, 방진 효과"],
+      use:["경하중 구역, 사무·창고 보행로","경량 장비만 드나드는 구간"] },
+    { mm:"1.0", key:"1mm",   price:127255, type:"중도 도막형",        tagline:"위생 · 식품 환경",
+      good:["위생 환경 조성, 먼지 억제","유지보수 용이, 기본 내마모"],
+      use:["식품 제조/포장 라인, 클린존 입구","지게차·핸드카가 가끔 다니는 구역"] },
+    { mm:"2.0", key:"2mm",   price:160631, type:"두꺼운 중도형",      tagline:"중하중 작업장",
+      good:["내하중·내마모 우수, 충격 흡수","오일 접촉·누유 구간에 강함, 방수성↑"],
+      use:["지게차 상시 이동, 파렛트랙 구역","절삭유·윤활유 접촉 많은 생산라인"] },
+    { mm:"3.0", key:"3mm",   price:194436, type:"몰탈형 · 자평형",    tagline:"최고 등급 · 중공업",
+      good:["최고 수준 내하중·내마모, 균열 억제","평탄도 확보로 정밀 장비 설치 적합"],
+      use:["중공업·금속가공, 대형 물류센터","전자·정밀기계 공장, 중량장비 구역"] }
+  ],
+
+  steps: [
+    ["01","바닥면 처리","연마기(그라인더)로 바닥을 평평하게 정리하고 기존 도장·이물질·요철을 제거합니다.","GRINDING"],
+    ["02","전체 청소","먼지·기름·이물질을 진공청소기와 송풍기로 완벽히 제거합니다.","CLEANING"],
+    ["03","하도(프라이머) 도포","바닥과 에폭시의 접착력을 끌어올립니다. 장기 들뜸을 막는 필수 단계입니다.","PRIMER"],
+    ["04","크랙 보수 · 퍼티 마감","균열과 구멍을 퍼티로 메우고 평탄화해 매끄러운 마감면을 확보합니다.","FILLING"],
+    ["05","중도 · 상도 도장","에폭시 도료를 1~2회 도포(색상 포함)하고 최종 마감·광택을 완성합니다.","COATING"]
+  ],
+
+  faq: [
+    ["견적은 어떻게 산정되나요?",
+     "견적은 <b>㎡(헤베) 단위</b>로 산정하며, <b>현장 방문 후 면적을 실측</b>해 확정됩니다. 이 페이지의 평당 단가는 <b>1평 = 3.3058㎡</b>로 환산한 참고용 금액이며, 바닥 상태(크랙·유분·들뜸 정도)와 보수 범위에 따라 달라질 수 있습니다. 실측·견적은 전액 무료입니다."],
+    ["최소 공사 면적이 있나요?",
+     "네. <b>최소 100평(약 330㎡) 이상</b>부터 공사가 가능합니다. 면적이 작으면 장비 반입·양생 일정 대비 단가가 과도하게 올라가기 때문입니다."],
+    ["물을 자주 쓰는 현장도 가능한가요?",
+     "<b>상시로 물을 쓰는 업체(세척·습윤 환경)는 에폭시 공사가 불가</b>합니다. 수분이 계속 올라오면 접착력이 떨어져 들뜸·박리가 발생합니다. 이런 현장은 우레탄 등 다른 공법을 별도로 상담해 드립니다."],
+    ["두께는 어떻게 고르나요?",
+     "<b>통행 하중</b>이 기준입니다. 사람만 다니면 0.3mm, 핸드카·소형 지게차가 가끔 다니면 1mm, <b>지게차가 상시로 다니면 2mm</b>, 중량 장비·중공업이면 3mm를 권합니다. 애매하면 실측 때 담당자가 현장을 보고 정해 드립니다."],
+    ["공사 기간과 건조 시간은요?",
+     "면적과 두께에 따라 다르지만 일반적으로 <b>100~300평 기준 3~5일</b>입니다. 최종 도장 후 <b>24~48시간의 건조·양생 시간</b>이 필요하며, 시공 후 최소 2일은 출입·장비 운행을 자제해 주셔야 합니다."],
+    ["하청을 주시나요?",
+     "아닙니다. 주영산업은 <b>전문도장건설면허를 직접 보유</b>하고 있어 하청 없이 <b>자사 인력이 직접 시공</b>합니다. 하자 발생 시 책임 소재가 분명합니다."],
+    ["정부지원으로 할 수 있나요?",
+     "가능합니다. <b>2026 안전보건공단 클린사업(지원율 70~90%)</b>과 <b>경기도 작업환경개선사업(80%)</b>으로 바닥도장공사를 진행하는 사업장이 많습니다. 사업자등록증 1장만 보내주시면 <b>신청 가능 여부와 예상 지원금을 무료로 검토</b>해 드립니다."],
+    ["색상도 고를 수 있나요?",
+     "네. <b>용도별 색상 선택이 가능</b>합니다. 일반 공장은 회색, 식품공장은 녹색을 많이 쓰며 통로·적재구역 <b>안전 구획선 도장</b>도 함께 진행할 수 있습니다."]
+  ]
+};
+
+// 리드 수신 엔드포인트 — 구글시트 "구글애즈광고" 컨테이너 바운드 Apps Script
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbx_gXSZ2MzMYIs6xzHOFOAl4agttM1tLvK6_G0Xpih4n8sKSltZ-GsDwc5i1RD2N5v9GQ/exec";
+
+// 광고 추적
+const TRACK = { metaPixel:"1007851345549014", googleAdsId:"AW-18312813955",
+                gadsConversionLabel:"", ga4Id:"" };
+</script>
+
+<style>
+:root{
+  --ink:#0d1117; --mute:#6b7684; --line:#e6e9ef;
+  --or:#ff7a1a; --or2:#ff9a4d; --or-dk:#d85f00;
+  --bl:#1769e0; --gr:#13a06a; --rd:#e03131;
+  --bg:#ffffff; --bg2:#f6f7f9;
+  --max:1120px; --r:16px;
+  --sh:0 6px 24px rgba(13,17,23,.08);
+  --sh2:0 14px 48px rgba(13,17,23,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,"Malgun Gothic",sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.62;-webkit-font-smoothing:antialiased;
+  font-size:16px;letter-spacing:-.015em;overflow-x:hidden;padding-bottom:70px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:66px 0}
+.sec-head{text-align:center;margin-bottom:36px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.16em;
+  color:var(--or-dk);background:#fff3e8;border-radius:999px;padding:6px 14px;margin-bottom:14px}
+h2{font-size:clamp(23px,4.6vw,34px);font-weight:800;line-height:1.3;letter-spacing:-.03em}
+h2 em{font-style:normal;color:var(--or)}
+.sec-head p{margin-top:12px;color:var(--mute);font-size:15.5px}
+
+/* 상단바 */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(255,255,255,.93);
+  backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line);
+  transform:translateY(-100%);transition:transform .28s}
+.topbar.show{transform:none}
+.topbar .in{max-width:var(--max);margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px}
+.topbar .lg{font-weight:900;font-size:16px;letter-spacing:-.04em}
+.topbar .lg span{color:var(--or)}
+.topbar .sp{flex:1}
+.tb-btn{font-size:13.5px;font-weight:800;padding:9px 16px;border-radius:10px;white-space:nowrap}
+.tb-btn.g{background:var(--ink);color:#fff}
+.tb-btn.o{background:var(--or);color:#fff}
+@media(max-width:560px){.topbar .lg{font-size:14px}.tb-btn{padding:8px 12px;font-size:12.5px}}
+
+/* 히어로 */
+.hero{position:relative;background:#0a0d12;color:#fff;overflow:hidden;padding:98px 0 58px}
+.hero .hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28}
+.hero::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(900px 520px at 16% 26%,rgba(255,122,26,.2),transparent 62%),
+             linear-gradient(180deg,rgba(10,13,18,.82),rgba(10,13,18,.96))}
+.hero .wrap{position:relative;z-index:2}
+.h-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,122,26,.18);
+  border:1px solid rgba(255,154,77,.5);color:#ffc08a;font-size:13px;font-weight:800;
+  padding:7px 15px;border-radius:999px;margin-bottom:18px}
+.h-badge b{color:#fff}
+.hero h1{font-size:clamp(31px,6.6vw,54px);font-weight:900;line-height:1.17;letter-spacing:-.045em}
+.hero h1 em{font-style:normal;color:var(--or2);text-shadow:0 2px 24px rgba(255,122,26,.45)}
+.hero .sub{margin-top:18px;font-size:clamp(15px,2.4vw,17.5px);color:#c9d1dc;max-width:600px;line-height:1.72}
+.hero .sub b{color:#fff}
+.h-money{margin-top:26px;display:inline-flex;flex-direction:column;gap:2px;
+  background:linear-gradient(135deg,rgba(255,122,26,.16),rgba(255,122,26,.04));
+  border:1px solid rgba(255,154,77,.42);border-radius:18px;padding:16px 24px}
+.h-money .k{font-size:13px;font-weight:700;color:#ffc08a;letter-spacing:.04em}
+.h-money .v{font-size:clamp(27px,5.4vw,40px);font-weight:900;letter-spacing:-.04em;line-height:1.15}
+.h-money .v small{font-size:.42em;font-weight:800;color:#c9d1dc;margin-left:6px}
+.h-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:11px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-weight:800;font-size:16px;padding:16px 28px;border-radius:13px;border:0;cursor:pointer;
+  transition:transform .14s,box-shadow .14s,background .14s;letter-spacing:-.02em}
+.btn:active{transform:scale(.975)}
+.btn-pri{background:linear-gradient(135deg,var(--or),#ff9436);color:#fff;
+  box-shadow:0 8px 26px rgba(255,122,26,.42)}
+.btn-gho{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.34)}
+.btn-lg{width:100%;padding:19px;font-size:17.5px}
+.h-chips{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);
+  color:#dbe2ea;font-size:13px;font-weight:700;padding:7px 13px;border-radius:9px}
+.chip b{color:var(--or2)}
+
+/* 숫자 밴드 */
+.band{background:var(--ink);color:#fff}
+.band .in{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.band .c{padding:24px 14px;text-align:center;border-left:1px solid rgba(255,255,255,.1)}
+.band .c:first-child{border-left:0}
+.band .n{font-size:clamp(17px,3.1vw,25px);font-weight:900;color:var(--or2);letter-spacing:-.03em}
+.band .l{font-size:12.5px;color:#9aa6b4;margin-top:3px;font-weight:600}
+@media(max-width:640px){.band .in{grid-template-columns:repeat(2,1fr)}
+  .band .c:nth-child(3),.band .c:nth-child(4){border-top:1px solid rgba(255,255,255,.1)}
+  .band .c:nth-child(3){border-left:0}}
+
+/* 두께 라인업 */
+.lineup{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.lineup{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:470px){.lineup{grid-template-columns:1fr}}
+.lc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 18px 20px;
+  box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.lc:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
+.lc .mm{font-size:30px;font-weight:900;letter-spacing:-.05em;color:var(--or);line-height:1}
+.lc .mm span{font-size:15px;color:var(--ink)}
+.lc .ty{font-size:13px;font-weight:800;color:var(--mute);margin-top:6px}
+.lc .tl{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:800;color:var(--or-dk);
+  background:#fff3e8;border-radius:7px;padding:4px 9px}
+.lc .pr{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);
+  font-size:21px;font-weight:900;letter-spacing:-.035em}
+.lc .pr small{display:block;font-size:11.5px;font-weight:700;color:var(--mute);letter-spacing:0}
+.lc ul{list-style:none;margin-top:13px}
+.lc li{font-size:13.2px;color:#38404c;padding-left:17px;position:relative;margin-bottom:5px;font-weight:600;line-height:1.55}
+.lc li::before{content:"";position:absolute;left:2px;top:8px;width:6px;height:6px;border-radius:50%;background:var(--or)}
+.lc .us{margin-top:12px;background:#f8fafc;border-radius:10px;padding:11px 12px;font-size:12.6px;
+  color:#4a5462;font-weight:600;line-height:1.6}
+.lc .us b{display:block;font-size:11px;letter-spacing:.1em;color:var(--mute);margin-bottom:4px}
+.lc .pick{margin-top:auto;padding-top:14px}
+.lc .pick b{display:block;text-align:center;background:#fff3e8;color:var(--or-dk);
+  border:1px dashed var(--or2);border-radius:10px;padding:10px;font-size:13.5px;font-weight:800;cursor:pointer}
+
+/* 계산기 */
+.calc{background:var(--ink);color:#fff}
+.calc .sec-head h2{color:#fff}
+.calc .sec-head p{color:#9aa6b4}
+.calc .eyebrow{background:rgba(255,122,26,.16);color:#ffc08a}
+.cbox{max-width:780px;margin:0 auto;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:28px}
+@media(max-width:520px){.cbox{padding:22px 18px}}
+.cfield{margin-bottom:20px}
+.cfield .lb{display:flex;justify-content:space-between;align-items:baseline;
+  font-size:14px;color:#9aa6b4;font-weight:700;margin-bottom:9px}
+.cfield .lb b{font-size:20px;color:#fff;font-weight:900;letter-spacing:-.03em}
+.cfield input[type=range]{width:100%;accent-color:var(--or);height:6px}
+.mmsel{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.mmsel button{border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#c9d1dc;
+  border-radius:11px;padding:12px 4px;font-size:15px;font-weight:900;cursor:pointer;font-family:inherit;
+  letter-spacing:-.03em;transition:all .15s}
+.mmsel button small{display:block;font-size:10.5px;font-weight:700;color:#8b95a3;letter-spacing:0;margin-top:2px}
+.mmsel button.on{background:var(--or);border-color:var(--or);color:#fff}
+.mmsel button.on small{color:#ffe3cc}
+.cout{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:6px}
+@media(max-width:520px){.cout{grid-template-columns:1fr}}
+.cout div{background:rgba(255,255,255,.05);border-radius:12px;padding:15px;text-align:center}
+.cout .k{font-size:12.5px;color:#9aa6b4;font-weight:700}
+.cout .v{font-size:clamp(19px,3.6vw,25px);font-weight:900;margin-top:3px;letter-spacing:-.035em}
+.cout .main{background:linear-gradient(135deg,rgba(255,122,26,.22),rgba(255,122,26,.07));
+  border:1px solid rgba(255,154,77,.42)}
+.cout .main .v{color:var(--or2)}
+.cout .gov{background:rgba(19,160,106,.14);border:1px solid rgba(19,160,106,.45)}
+.cout .gov .v{color:#4ddba0}
+.cnote{margin-top:16px;font-size:12.8px;color:#9aa6b4;text-align:center;line-height:1.75}
+
+/* 단가표 */
+.ptab{max-width:720px;margin:0 auto;border:1px solid var(--line);border-radius:16px;
+  overflow:hidden;background:#fff;box-shadow:var(--sh)}
+.ptab table{width:100%;border-collapse:collapse}
+.ptab th{font-size:12.5px;color:var(--mute);font-weight:800;padding:12px 8px;background:#f4f6f8;
+  border-bottom:1px solid var(--line)}
+.ptab td{font-size:14.5px;padding:14px 8px;text-align:center;border-bottom:1px solid #f0f2f5;font-weight:700}
+.ptab tr:last-child td{border-bottom:0}
+.ptab td.mm{font-weight:900;color:var(--or);font-size:16px}
+.ptab td.pr{font-weight:900;color:var(--ink)}
+.ptab td.sm{font-size:13px;color:var(--mute);font-weight:600}
+.warn{max-width:720px;margin:20px auto 0;background:#fff5f5;border:1px solid #f5c2c2;
+  border-radius:14px;padding:18px 22px}
+.warn .t{font-size:14.5px;font-weight:900;color:var(--rd);margin-bottom:8px}
+.warn li{font-size:14px;color:#4a5462;line-height:1.75;list-style:none;padding-left:17px;position:relative;font-weight:600}
+.warn li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--rd)}
+.warn li b{color:var(--rd)}
+
+/* 전/후 */
+.before{background:var(--bg2)}
+.ba{display:grid;gap:16px}
+.ba-row{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--sh)}
+@media(max-width:620px){.ba-row{grid-template-columns:1fr;gap:8px}.ba-ar{transform:rotate(90deg);margin:0 auto}}
+.ba-row figure{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#e9edf2}
+.ba-row img{width:100%;height:100%;object-fit:cover}
+.ba-row .bdg{position:absolute;left:9px;top:9px;font-size:11px;font-weight:900;
+  padding:4px 10px;border-radius:7px;letter-spacing:.04em;color:#fff}
+.ba-row .bdg.b{background:#5b6472}
+.ba-row .bdg.a{background:var(--gr)}
+.ba-row figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 11px 9px;
+  font-size:12px;font-weight:700;color:#fff;line-height:1.45;
+  background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.72))}
+.ba-ar{font-size:22px;color:var(--or);font-weight:900}
+.ba-note{margin-top:18px;text-align:center;font-size:13px;color:var(--mute);line-height:1.75}
+.bf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:9px;margin-top:26px}
+.bf-grid figure{position:relative;border-radius:11px;overflow:hidden;aspect-ratio:3/4;background:#dde2e8}
+.bf-grid img{width:100%;height:100%;object-fit:cover;filter:saturate(.85)}
+.bf-grid figcaption{position:absolute;left:0;bottom:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;font-size:11px;
+  font-weight:700;padding:16px 8px 6px}
+
+/* 공정 5단계 */
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media(max-width:900px){.proc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.proc{grid-template-columns:1fr}}
+.pr-c{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+.pr-c .im{aspect-ratio:4/3;background:#eef1f5;position:relative}
+.pr-c .im img{width:100%;height:100%;object-fit:cover}
+.pr-c .im .n{position:absolute;left:9px;top:9px;width:26px;height:26px;border-radius:50%;
+  background:var(--or);color:#fff;font-size:12px;font-weight:900;display:grid;place-items:center}
+.pr-c .bd{padding:14px 15px 17px}
+.pr-c .en{font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--or-dk)}
+.pr-c h4{font-size:15.5px;font-weight:800;letter-spacing:-.03em;margin:3px 0 6px}
+.pr-c p{font-size:13.2px;color:#5b6472;line-height:1.62}
+.dry{margin-top:22px;background:#fff8f2;border:1px dashed var(--or2);border-radius:14px;
+  padding:16px 20px;text-align:center;font-size:14px;color:var(--or-dk);font-weight:700;line-height:1.7}
+
+/* 갤러리 */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal figure{border-radius:13px;overflow:hidden;aspect-ratio:4/3;background:#f2f4f7}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.07)}
+.galtab{display:flex;gap:8px;justify-content:center;margin-bottom:22px;flex-wrap:wrap}
+.galtab button{border:1.5px solid var(--line);background:#fff;border-radius:999px;
+  padding:9px 18px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;
+  letter-spacing:-.02em;transition:all .15s}
+.galtab button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* 정부지원 */
+.gov{background:linear-gradient(135deg,#f0f7ff,#fff)}
+.gv{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:860px;margin:0 auto}
+@media(max-width:700px){.gv{grid-template-columns:1fr}}
+.gv-c{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--sh)}
+.gv-c .k{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--bl)}
+.gv-c h4{font-size:19px;font-weight:900;margin:5px 0 4px;letter-spacing:-.035em}
+.gv-c .s{font-size:13.5px;color:var(--mute);font-weight:600}
+.gv-c dl{display:grid;grid-template-columns:auto 1fr;gap:7px 14px;margin-top:16px;
+  padding-top:14px;border-top:1px dashed var(--line)}
+.gv-c dt{font-size:13px;color:var(--mute);font-weight:700}
+.gv-c dd{font-size:14px;font-weight:800;text-align:right}
+.gv-c dd.hi{color:var(--bl);font-weight:900}
+.gv-note{max-width:860px;margin:18px auto 0;text-align:center;font-size:13.5px;color:var(--mute);line-height:1.8}
+.gv-note b{color:var(--ink)}
+
+/* FAQ */
+.faq{max-width:840px;margin:0 auto}
+.fq{border:1px solid var(--line);border-radius:13px;margin-bottom:10px;overflow:hidden;background:#fff}
+.fq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-weight:800;
+  font-size:16px;position:relative;letter-spacing:-.025em}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);
+  font-size:24px;font-weight:400;color:var(--or);transition:transform .2s}
+.fq[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.fq[open] summary{background:#fff8f2}
+.fq .a{padding:16px 20px 20px;color:#4a5462;font-size:15px;line-height:1.76;border-top:1px solid var(--line)}
+.fq .a b{color:var(--ink);background:#fff3e8;padding:1px 4px;border-radius:4px}
+
+/* 폼 */
+.apply{background:linear-gradient(180deg,#f6f7f9,#eceff3)}
+.fm{max-width:640px;margin:0 auto;background:#fff;border-radius:22px;
+  box-shadow:0 18px 60px rgba(13,17,23,.14);overflow:hidden}
+.fm-hd{background:linear-gradient(135deg,var(--ink),#20293a);color:#fff;padding:28px 28px 24px;text-align:center}
+.fm-hd .k{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--or2)}
+.fm-hd h3{font-size:clamp(21px,4vw,27px);font-weight:900;margin-top:7px;letter-spacing:-.035em}
+.fm-hd p{font-size:14px;color:#9aa6b4;margin-top:8px}
+.fm-bd{padding:26px 28px 30px}
+@media(max-width:520px){.fm-bd{padding:22px 18px 26px}.fm-hd{padding:24px 18px 20px}}
+.fgrp{margin-bottom:17px}
+.fgrp>label.lb{display:block;font-size:13.5px;font-weight:800;margin-bottom:7px;letter-spacing:-.02em}
+.req{color:var(--rd);margin-left:2px}
+.hint{font-size:12.5px;color:var(--mute);font-weight:600;margin-left:6px}
+input[type=text],input[type=tel],input[type=email],input[type=number],select,textarea{width:100%;
+  border:1.5px solid var(--line);border-radius:11px;padding:14px 15px;font-size:15.5px;font-family:inherit;
+  background:#fbfcfd;transition:border-color .15s,background .15s;letter-spacing:-.02em}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--or);background:#fff}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+@media(max-width:440px){.g2{grid-template-columns:1fr}}
+.picks{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+@media(max-width:520px){.picks{grid-template-columns:1fr}}
+.pk{position:relative}
+.pk input{position:absolute;opacity:0;width:0;height:0}
+.pk span{display:flex;align-items:center;gap:10px;border:1.5px solid var(--line);border-radius:12px;
+  padding:13px;font-size:14.6px;font-weight:700;cursor:pointer;background:#fbfcfd;
+  transition:all .15s;letter-spacing:-.025em;line-height:1.3}
+.pk span::before{content:"";width:21px;height:21px;border-radius:50%;border:2px solid #c4ccd6;
+  flex:0 0 auto;background:#fff;transition:all .15s}
+.pk input:checked + span{border-color:var(--or);background:#fff5ec;color:var(--or-dk)}
+.pk input:checked + span::before{background:var(--or);border-color:var(--or);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.5 8.5l3 3 6-7' stroke='white' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-size:14px;background-position:center;background-repeat:no-repeat}
+.agree{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:#5b6472;
+  margin:4px 0 16px;line-height:1.6}
+.agree input{width:18px;height:18px;margin-top:2px;accent-color:var(--or);flex:0 0 auto}
+.fnote{text-align:center;font-size:12.5px;color:var(--mute);margin-top:12px}
+.msg{margin-top:13px;padding:13px 15px;border-radius:11px;font-size:14.5px;font-weight:700;display:none}
+.msg.ok{display:block;background:#e7f7ef;color:#0b7a4f;border:1px solid #9fe0c3}
+.msg.err{display:block;background:#fdecec;color:#c42b2b;border:1px solid #f5bcbc}
+
+/* 푸터 / 스티키 */
+footer{background:var(--ink);color:#8b95a3;padding:44px 0 28px;font-size:13.4px;line-height:1.85}
+footer .lg{font-size:19px;font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:10px}
+footer .lg span{color:var(--or)}
+footer a{color:#c9d1dc}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);border-top:1px solid var(--line);
+  padding:9px 12px calc(9px + env(safe-area-inset-bottom));
+  display:grid;grid-template-columns:1fr 1.25fr;gap:8px;box-shadow:0 -4px 20px rgba(0,0,0,.07)}
+.sticky .btn{padding:14px 10px;font-size:15.5px;border-radius:11px}
+.sticky .tel{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+@media(min-width:900px){.sticky{max-width:420px;left:auto;right:22px;bottom:22px;border-radius:16px;
+  border:1px solid var(--line);padding:10px}}
+
+.fadein{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
+.fadein.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.fadein{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar" id="topbar"><div class="in">
+  <div class="lg" id="tbLogo">주영<span>산업</span></div>
+  <div class="sp"></div>
+  <a class="tb-btn g" id="tbTel" href="tel:">전화 상담</a>
+  <a class="tb-btn o" href="#apply" data-cta="topbar">무료 견적</a>
+</div></div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <img class="hbg" src="images/hero.jpg" alt="" aria-hidden="true" />
+  <div class="wrap">
+    <div class="h-badge"><b>전문도장건설면허</b> 보유 · 하청 없이 직접시공</div>
+    <h1>공장 바닥,<br><em>새 옷</em> 입히세요</h1>
+    <p class="sub">기름에 절고 깨진 바닥, 분진 날리는 맨 콘크리트.<br>
+      <b>에폭시 바닥도장</b> 한 번이면 미끄럼·분진·전도재해가 함께 사라집니다.</p>
+
+    <div class="h-money">
+      <div class="k">평당 단가 · 0.3mm 기준</div>
+      <div class="v">93,628원<small>부가세 별도</small></div>
+    </div>
+
+    <div class="h-cta">
+      <a class="btn btn-pri" href="#apply" data-cta="hero">무료 실측·견적 받기</a>
+      <a class="btn btn-gho" id="heroTel" href="tel:">📞 바로 전화상담</a>
+    </div>
+
+    <div class="h-chips">
+      <span class="chip">두께 <b>0.3 ~ 3.0mm</b> 선택</span>
+      <span class="chip">정부지원 <b>70 ~ 90%</b></span>
+      <span class="chip">실측·견적 <b>전액 무료</b></span>
+      <span class="chip">사업자등록증 <b>1장</b>이면 검토</span>
+    </div>
+  </div>
+</header>
+
+<div class="band"><div class="in">
+  <div class="c"><div class="n">평당 93,628원~</div><div class="l">0.3mm 코팅형 기준</div></div>
+  <div class="c"><div class="n">0.3 ~ 3.0mm</div><div class="l">4가지 두께 선택</div></div>
+  <div class="c"><div class="n">70 ~ 90%</div><div class="l">정부지원 비율</div></div>
+  <div class="c"><div class="n">직접시공</div><div class="l">전문도장건설면허 보유</div></div>
+</div></div>
+
+<!-- ================= 두께 라인업 ================= -->
+<section id="lineup">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">LINEUP</span>
+      <h2>두께별 <em>시공 라인업</em></h2>
+      <p>사용 환경과 하중에 맞춰 두께를 선택하세요. 두꺼울수록 내구성이 올라갑니다.</p>
+    </div>
+    <div class="lineup fadein" id="lineGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 계산기 ================= -->
+<section class="calc" id="calc">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">ESTIMATE</span>
+      <h2>우리 공장은 <em>얼마일까요?</em></h2>
+      <p>면적과 두께만 넣어보세요. 대략적인 공사비가 바로 나옵니다.</p>
+    </div>
+
+    <div class="cbox fadein">
+      <div class="cfield">
+        <div class="lb"><span>시공 면적</span><b id="aVal">300평</b></div>
+        <input type="range" id="aRange" min="100" max="3000" step="10" value="300" />
+        <div class="cnote" style="margin-top:6px;text-align:left" id="aM2">= 991.7㎡ (1평 = 3.3058㎡)</div>
+      </div>
+
+      <div class="cfield">
+        <div class="lb"><span>도막 두께</span><b id="mVal">2.0mm</b></div>
+        <div class="mmsel" id="mmSel"></div>
+      </div>
+
+      <div class="cout">
+        <div class="main"><div class="k">예상 공사비 (공급가액)</div><div class="v" id="oTot">-</div></div>
+        <div><div class="k">부가세 10% (별도)</div><div class="v" id="oVat">-</div></div>
+        <div class="gov"><div class="k">정부지원 70% 적용 시 자부담</div><div class="v" id="oSelf">-</div></div>
+        <div><div class="k">㎡당 단가</div><div class="v" id="oM2">-</div></div>
+      </div>
+
+      <div class="cnote">※ 위 금액은 <b style="color:#fff">평당 단가 × 면적</b>으로 계산한 <b style="color:#fff">참고용 추정치</b>입니다.<br>
+        실제 견적은 ㎡ 단가 기준으로 <b style="color:#fff">현장 실측 후 확정</b>되며, 바닥 상태·보수 범위에 따라 달라집니다.</div>
+
+      <a class="btn btn-pri btn-lg" href="#apply" data-cta="calc" style="margin-top:20px">이 조건으로 정확한 견적 받기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 단가표 ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">PRICE</span>
+      <h2>두께별 <em>평당 단가</em></h2>
+      <p>견적은 ㎡(헤베) 단위로 산정하며, 현장 방문 후 면적 실측을 통해 확정됩니다.</p>
+    </div>
+    <div class="ptab fadein">
+      <table>
+        <thead><tr><th>두께</th><th>구분</th><th>평당 단가</th><th>㎡당 단가</th></tr></thead>
+        <tbody id="priceBody"></tbody>
+      </table>
+    </div>
+    <div class="warn fadein">
+      <div class="t">⚠ 공사 전 반드시 확인해 주세요</div>
+      <ul>
+        <li><b>최소 100평(약 330㎡) 이상</b>부터 공사가 가능합니다.</li>
+        <li><b>물을 상시로 쓰는 업체</b>(상시 세척·습윤 환경)는 에폭시 공사가 <b>불가</b>합니다.</li>
+        <li>모든 금액은 <b>공급가액 기준이며 부가세는 별도</b>입니다. 세금계산서는 의무 발행됩니다.</li>
+        <li>최종 시공 후 <b>24~48시간 건조·양생</b>이 필요하며, 최소 2일은 출입·장비 운행을 자제해 주셔야 합니다.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 전/후 ================= -->
+<section class="before" id="before">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">BEFORE &amp; AFTER</span>
+      <h2>이런 바닥, <em>그대로 두시겠습니까?</em></h2>
+      <p>깨지고 기름진 바닥이 에폭시 바닥으로 바뀝니다.</p>
+    </div>
+    <div class="ba fadein" id="baGrid"></div>
+    <div class="ba-note fadein">※ 위 전·후 사진은 <b>같은 현장을 같은 각도에서</b> 시공 전과 시공 완료 후에
+      촬영한 주영산업 실제 시공 사례입니다.</div>
+
+    <div class="sec-head fadein" style="margin-top:46px;margin-bottom:16px">
+      <h2 style="font-size:clamp(19px,3.4vw,25px)">상담 신청 현장 — <em>이런 바닥들입니다</em></h2>
+    </div>
+    <div class="bf-grid fadein" id="bfGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 공정 ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">PROCESS</span>
+      <h2>시공은 <em>5단계</em>로 진행됩니다</h2>
+      <p>검증된 시공 순서로 안정적인 마감을 보장합니다.</p>
+    </div>
+    <div class="proc fadein" id="procGrid"></div>
+    <div class="dry fadein">⏱ 최종 시공 후 <b>24~48시간의 건조·양생 시간</b>이 필요합니다 (현장 상황에 따라 차이 있음)</div>
+  </div>
+</section>
+
+<!-- ================= 갤러리 ================= -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">GALLERY</span>
+      <h2>주영산업 <em>실제 시공 현장</em></h2>
+      <p>전문도장건설면허를 보유하여 하청이 아닌 직접 작업합니다.</p>
+    </div>
+    <div class="galtab fadein" id="galTab"></div>
+    <div class="gal fadein" id="galGrid"></div>
+  </div>
+</section>
+
+<!-- ================= 정부지원 ================= -->
+<section class="gov" id="support">
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">SUPPORT</span>
+      <h2>정부지원사업으로 <em>도입하세요</em></h2>
+      <p>신청서류부터 시공까지 풀패키지로 대행합니다.</p>
+    </div>
+    <div class="gv fadein">
+      <div class="gv-c">
+        <div class="k">PROGRAM 01 · KOSHA</div>
+        <h4>2026 클린사업</h4>
+        <div class="s">안전보건공단 작업환경개선 지원사업</div>
+        <dl>
+          <dt>지원율</dt><dd class="hi">70 ~ 90%</dd>
+          <dt>대상</dt><dd>고위험 작업장</dd>
+          <dt>신청시기</dt><dd>상시 (마감 임박)</dd>
+        </dl>
+      </div>
+      <div class="gv-c">
+        <div class="k">PROGRAM 02 · GYEONGGI</div>
+        <h4>2026 경기도 작업환경개선사업</h4>
+        <div class="s">경기도 제조업 사업장 대상</div>
+        <dl>
+          <dt>지원율</dt><dd class="hi">80%</dd>
+          <dt>대상</dt><dd>경기도 제조업</dd>
+          <dt>신청시기</dt><dd>8월 (예정)</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="gv-note fadein"><b>사업자등록증 1장만 보내주세요.</b><br>
+      신청 가능 여부 · 예상 지원금 · 자부담금을 무료로 검토해 드립니다.<br>
+      필요서류(사업자등록증·소상공인확인서·납세증명서·4대보험 가입자명부·재무제표)는 저희가 안내·대행합니다.</div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head fadein">
+      <span class="eyebrow">FAQ</span>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq fadein" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ================= 신청 ================= -->
+<section class="apply" id="apply">
+  <div class="wrap">
+    <div class="fm fadein">
+      <div class="fm-hd">
+        <div class="k">FREE ESTIMATE</div>
+        <h3>무료 실측 · 견적 신청</h3>
+        <p>상담 · 실측 · 견적 전부 무료입니다. 영업일 1일 이내 연락드립니다.</p>
+      </div>
+      <div class="fm-bd">
+        <form id="leadForm" autocomplete="on" novalidate>
+
+          <div class="fgrp">
+            <label class="lb">희망 두께<span class="req">*</span>
+              <span class="hint">모르면 "상담 후 결정"을 선택하세요</span></label>
+            <div class="picks" id="pickBox"></div>
+          </div>
+
+          <div class="g2">
+            <div class="fgrp">
+              <label class="lb">시공 면적 <span class="hint">평</span></label>
+              <input type="number" name="area" inputmode="numeric" min="0" placeholder="예) 300" />
+            </div>
+            <div class="fgrp">
+              <label class="lb">바닥 용도</label>
+              <select name="usage">
+                <option value="">선택해 주세요</option>
+                <option>일반 제조공장</option><option>식품 제조·포장</option>
+                <option>물류창고 · 적재구역</option><option>중공업 · 금속가공</option>
+                <option>주차장 · 통로</option><option>기타</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fgrp">
+            <label class="lb">업체명<span class="req">*</span></label>
+            <input type="text" name="company" placeholder="예) 주영산업" required />
+          </div>
+
+          <div class="g2">
+            <div class="fgrp">
+              <label class="lb">담당자 성함<span class="req">*</span></label>
+              <input type="text" name="manager" placeholder="예) 홍길동" required />
+            </div>
+            <div class="fgrp">
+              <label class="lb">직책</label>
+              <input type="text" name="position" placeholder="예) 시설팀장" />
+            </div>
+          </div>
+
+          <div class="g2">
+            <div class="fgrp">
+              <label class="lb">연락처<span class="req">*</span></label>
+              <input type="tel" name="phone" inputmode="numeric" placeholder="010-1234-5678" required />
+            </div>
+            <div class="fgrp">
+              <label class="lb">상시근로자 수</label>
+              <select name="headcount">
+                <option value="">선택해 주세요</option>
+                <option>5인 미만</option><option>5 ~ 9인</option>
+                <option>10 ~ 29인</option><option>30 ~ 49인</option><option>50인 이상</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fgrp">
+            <label class="lb">이메일 <span class="hint">선택 · 견적서 받으실 주소</span></label>
+            <input type="email" name="email" inputmode="email" autocomplete="email"
+                   placeholder="예) manager@company.co.kr" />
+          </div>
+
+          <div class="fgrp">
+            <label class="lb">사업장 주소<span class="req">*</span></label>
+            <input type="text" name="address" placeholder="예) 경기도 화성시 ○○읍 ○○로" required />
+          </div>
+
+          <div class="fgrp">
+            <label class="lb">문의 내용 <span class="hint">선택</span></label>
+            <textarea name="memo" rows="2" placeholder="예) 기계공장 300평입니다. 지게차가 상시로 다닙니다. 정부지원 가능한지도 알고 싶어요."></textarea>
+          </div>
+
+          <label class="agree">
+            <input type="checkbox" name="agree" required />
+            <span>개인정보 수집·이용에 동의합니다. (수집항목: 업체명·담당자·연락처·이메일·주소 / 목적: 바닥도장공사 상담 및 견적 발송 / 보유: 상담 종료 후 1년)</span>
+          </label>
+
+          <button type="submit" class="btn btn-pri btn-lg" id="submitBtn">무료 견적 신청하기</button>
+          <div class="fnote">제출 후 영업일 기준 1일 이내에 연락드립니다.</div>
+          <div class="msg" id="formMsg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="lg" id="ftLogo">주영<span>산업</span></div>
+    <div id="ftInfo"></div>
+    <div style="margin-top:14px;font-size:12.4px;color:#6b7684">
+      ※ 모든 금액은 공급가액 기준이며 부가세는 별도입니다. 세금계산서는 의무 발행됩니다.<br>
+      ※ 평당 단가는 1평 = 3.3058㎡로 환산한 참고 금액이며, 실제 견적은 현장 실측 후 ㎡ 단가 기준으로 확정됩니다.<br>
+      ※ 정부지원사업의 지원 대상·비율·한도는 각 사업 공고 및 심사 결과에 따라 달라질 수 있습니다.
+    </div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn tel" id="stTel" href="tel:">📞 전화</a>
+  <a class="btn btn-pri" href="#apply" data-cta="sticky">무료 견적받기</a>
+</div>
+
+<!-- ====================================================================== -->
+<!--  [2] 동작 스크립트                                                       -->
+<!-- ====================================================================== -->
+<script>
+(function(){
+  const $  = s => document.querySelector(s);
+  const $$ = s => Array.from(document.querySelectorAll(s));
+  const PY = 3.3058;                                  // 1평 = 3.3058㎡
+  const won = n => Math.round(n).toLocaleString('ko-KR') + '원';
+  const man = n => (n>=10000 ? Math.round(n/10000).toLocaleString('ko-KR')+'만원' : won(n));
+
+  /* ---- 연락처 ---- */
+  const tel = 'tel:' + CFG.phone.replace(/[^0-9]/g,'');
+  ['#heroTel','#stTel','#tbTel'].forEach(s=>{ const e=$(s); if(e) e.href = tel; });
+  [$('#tbLogo'),$('#ftLogo')].forEach(e=>{ e.innerHTML = CFG.brand.slice(0,2)+'<span>'+CFG.brand.slice(2)+'</span>'; });
+  $('#ftInfo').innerHTML =
+    CFG.bizName + ' · 담당 ' + CFG.contact + '<br>' +
+    '상담문의 <a href="'+tel+'"><b>'+CFG.phone+'</b></a> (24시간 통화 가능)<br>' +
+    '&copy; ' + new Date().getFullYear() + ' ' + CFG.brand + '. All rights reserved.';
+
+  /* ---- 두께 라인업 ---- */
+  $('#lineGrid').innerHTML = CFG.specs.map(s=>`
+    <article class="lc">
+      <div class="mm">${s.mm}<span>mm</span></div>
+      <div class="ty">${s.type}</div>
+      <div class="tl">${s.tagline}</div>
+      <div class="pr">${s.price.toLocaleString('ko-KR')}원<small>평당 · 부가세 별도</small></div>
+      <ul>${s.good.map(g=>`<li>${g}</li>`).join('')}</ul>
+      <div class="us"><b>권장 사용처</b>${s.use.join('<br>')}</div>
+      <div class="pick"><b class="js-pick" data-key="${s.key}">＋ 이 두께로 견적받기</b></div>
+    </article>`).join('');
+
+  /* ---- 단가표 ---- */
+  $('#priceBody').innerHTML = CFG.specs.map(s=>`
+    <tr><td class="mm">${s.mm}mm</td><td class="sm">${s.type}</td>
+      <td class="pr">${s.price.toLocaleString('ko-KR')}원</td>
+      <td class="sm">${Math.round(s.price/PY).toLocaleString('ko-KR')}원</td></tr>`).join('');
+
+  /* ---- 계산기 ---- */
+  const ar=$('#aRange'); let mmIdx = 2;               // 기본 2.0mm
+  $('#mmSel').innerHTML = CFG.specs.map((s,i)=>`
+    <button type="button"${i===mmIdx?' class="on"':''}>${s.mm}<small>mm</small></button>`).join('');
+  function calc(){
+    const s   = CFG.specs[mmIdx];
+    const py  = +ar.value;
+    const tot = py * s.price;
+    $('#aVal').textContent  = py.toLocaleString('ko-KR')+'평';
+    $('#aM2').textContent   = '= ' + Math.round(py*PY).toLocaleString('ko-KR') + '㎡ (1평 = 3.3058㎡)';
+    $('#mVal').textContent  = s.mm+'mm';
+    $('#oTot').textContent  = man(tot);
+    $('#oVat').textContent  = man(tot*0.1);
+    $('#oSelf').textContent = man(tot*0.3);
+    $('#oM2').textContent   = Math.round(s.price/PY).toLocaleString('ko-KR')+'원';
+  }
+  ar.addEventListener('input',calc);
+  $$('#mmSel button').forEach((b,i)=>b.addEventListener('click',()=>{
+    $$('#mmSel button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); mmIdx=i; calc();
+    const r = boxes.find(x=>x.dataset.key===CFG.specs[i].key); if(r) r.checked = true;
+  }));
+  calc();
+
+  /* ---- 두께 선택 라디오 ---- */
+  const OPTS = CFG.specs.map(s=>({key:s.key, label:s.mm+'mm — '+s.type}))
+                        .concat([{key:'상담 후 결정', label:'상담 후 결정 (추천받기)'}]);
+  $('#pickBox').innerHTML = OPTS.map((o,i)=>`
+    <label class="pk">
+      <input type="radio" name="thick" value="${o.key}" data-key="${o.key}"${i===4?' checked':''}>
+      <span>${o.label}</span>
+    </label>`).join('');
+  const boxes = $$('#pickBox input[name=thick]');
+
+  $$('.js-pick').forEach(el=>{
+    el.addEventListener('click',e=>{
+      const b = boxes.find(x=>x.dataset.key===el.dataset.key);
+      if(b) b.checked = true;
+      if(window.fbq) fbq('trackCustom','PickItem',{item:el.dataset.key});
+      e.preventDefault();
+      document.getElementById('apply').scrollIntoView({behavior:'smooth'});
+      const t=el.textContent; el.textContent='✔ 신청서에 담겼습니다';
+      setTimeout(()=>{el.textContent=t;},2600);
+    });
+  });
+
+  /* ---- 전/후 ---- */
+  const PAIRS = [
+    ['ba1b.jpg','도장이 벗겨지고 기름에 절은 통로 · 구획선도 지워진 상태',
+     'ba1a.jpg','에폭시 라이닝 + 통로 구획선 재도색 — 거울처럼 매끈합니다'],
+    ['ba2b.jpg','분진이 올라오는 맨바닥 기계공장 · 청소해도 티가 안 납니다',
+     'ba2a.jpg','공장 전체 에폭시 시공 완료 — 조명이 그대로 비칩니다'],
+    ['ba3b.jpg','마감 전 콘크리트 바닥 · 분진 관리가 어려운 상태',
+     'ba3a.jpg','백색 에폭시 시공 완료 — 식품·정밀 작업장도 가능합니다']
+  ];
+  $('#baGrid').innerHTML = PAIRS.map(([b,bc,a,ac])=>`
+    <div class="ba-row">
+      <figure><img src="images/${b}" alt="${bc}" loading="lazy">
+        <span class="bdg b">BEFORE</span><figcaption>${bc}</figcaption></figure>
+      <div class="ba-ar">➜</div>
+      <figure><img src="images/${a}" alt="${ac}" loading="lazy">
+        <span class="bdg a">AFTER</span><figcaption>${ac}</figcaption></figure>
+    </div>`).join('');
+
+  const BF = [[1,'도장이 벗겨진 바닥'],[2,'넓게 들뜬 표면 박리'],[3,'깨지고 파인 통로'],
+              [4,'갈라지고 메워진 바닥'],[5,'지게차 자국 · 분진'],[6,'지워진 통로 구획선'],
+              [7,'마모된 맨 콘크리트']];
+  $('#bfGrid').innerHTML = BF.map(([n,c])=>`
+    <figure><img src="images/bf${n}.jpg" alt="${c}" loading="lazy"
+      onerror="this.closest('figure').remove()"><figcaption>${c}</figcaption></figure>`).join('');
+
+  /* ---- 공정 5단계 ---- */
+  const PIMG = ['step_fl2.jpg','step_fl1.jpg','step_fl3.jpg','step_fl4.jpg','gal1.jpg'];
+  $('#procGrid').innerHTML = CFG.steps.map(([n,t,d,en],i)=>`
+    <article class="pr-c">
+      <div class="im"><img src="images/${PIMG[i]}" alt="${t}" loading="lazy"><span class="n">${n}</span></div>
+      <div class="bd"><div class="en">${en}</div><h4>${t}</h4><p>${d}</p></div>
+    </article>`).join('');
+
+  /* ---- 갤러리 ---- */
+  const GAL = {
+    '시공 완료':   ['gal1.jpg','gal2.jpg','gal3.jpg','gal4.jpg','gal5.jpg','gal6.jpg'],
+    '시공 과정':   ['gal9.jpg','gal10.jpg','gal11.jpg','gal12.jpg','step_fl2.jpg','step_fl3.jpg'],
+    '마감 디테일': ['gal7.jpg','gal8.jpg','ba1a.jpg','ba2a.jpg','ba3a.jpg','step_fl4.jpg']
+  };
+  const keys = Object.keys(GAL);
+  $('#galTab').innerHTML = keys.map((k,i)=>`<button type="button"${i===0?' class="on"':''}>${k}</button>`).join('');
+  function drawGal(k){
+    $('#galGrid').innerHTML = GAL[k].map(f=>`
+      <figure><img src="images/${f}" alt="${k}" loading="lazy"
+        onerror="this.closest('figure').remove()"></figure>`).join('');
+  }
+  drawGal(keys[0]);
+  $$('#galTab button').forEach((b,i)=>b.addEventListener('click',()=>{
+    $$('#galTab button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); drawGal(keys[i]);
+  }));
+
+  /* ---- FAQ ---- */
+  $('#faqList').innerHTML = CFG.faq.map(([q,a],i)=>`
+    <details class="fq"${i===0?' open':''}><summary>${q}</summary><div class="a">${a}</div></details>`).join('');
+
+  /* ---- 상단바 / 등장 ---- */
+  const tb=$('#topbar');
+  addEventListener('scroll',()=>{ tb.classList.toggle('show', scrollY>520); },{passive:true});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  }),{threshold:.08});
+  $$('.fadein').forEach(e=>io.observe(e));
+
+  /* ---- CTA 추적 ---- */
+  $$('[data-cta]').forEach(el=>el.addEventListener('click',()=>{
+    if(window.fbq) fbq('trackCustom','ClickApply',{from:el.dataset.cta});
+  }));
+  $$('a[href^="tel:"]').forEach(el=>el.addEventListener('click',()=>{
+    if(window.fbq) fbq('trackCustom','ClickCall');
+    if(window.gtag && TRACK.googleAdsId) gtag('event','click_call');
+  }));
+
+  /* ---- 폼 ---- */
+  const form=$('#leadForm'), msg=$('#formMsg'), btn=$('#submitBtn');
+  form.phone.addEventListener('input',e=>{
+    let x=e.target.value.replace(/[^0-9]/g,'').slice(0,11);
+    if(x.length>3&&x.length<=7) x=x.replace(/(\d{3})(\d+)/,'$1-$2');
+    else if(x.length>7)         x=x.replace(/(\d{3})(\d{4})(\d+)/,'$1-$2-$3');
+    e.target.value=x;
+  });
+  function show(t,k){ msg.textContent=t; msg.className='msg '+k;
+    msg.scrollIntoView({behavior:'smooth',block:'center'}); }
+
+  form.addEventListener('submit', async e=>{
+    e.preventDefault();
+    const thick = (boxes.find(b=>b.checked)||{}).value || '상담 후 결정';
+    if(!form.company.value.trim()) return show('업체명을 입력해 주세요.','err');
+    if(!form.manager.value.trim()) return show('담당자 성함을 입력해 주세요.','err');
+    if(form.phone.value.replace(/[^0-9]/g,'').length<9)
+                                   return show('연락처를 정확히 입력해 주세요.','err');
+    if(!form.address.value.trim()) return show('사업장 주소를 입력해 주세요.','err');
+    const em = form.email.value.trim();
+    if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em))
+                                   return show('이메일 주소를 정확히 입력해 주세요.','err');
+    if(!form.agree.checked)        return show('개인정보 수집·이용 동의가 필요합니다.','err');
+
+    btn.disabled=true; btn.textContent='전송 중...';
+    const memo = form.memo.value.trim();
+    const hc   = form.headcount.value;
+    const area = form.area.value.trim();
+    const use  = form.usage.value;
+    // 백엔드가 8칸만 기록하므로 유입경로 칸에 부가정보를 같이 실어 보냄
+    const trail = [location.href,
+                   '희망두께: ' + thick,
+                   area ? '면적: '       + area + '평' : '',
+                   use  ? '바닥용도: '   + use  : '',
+                   hc   ? '상시근로자: ' + hc   : '',
+                   em   ? '이메일: '     + em   : '',
+                   memo ? '메모: '       + memo : ''].filter(Boolean).join(' | ');
+    const data = {
+      program:'바닥도장공사',
+      item:'바닥도장공사',                      // ★ 시트 탭 라우팅 키 (고정값)
+      pickedItems: '바닥도장공사 ' + thick, thickness: thick,
+      area: area, usage: use,
+      company:form.company.value.trim(), manager:form.manager.value.trim(),
+      position:form.position.value.trim(), phone:form.phone.value.trim(),
+      email: em, headcount: hc, address:form.address.value.trim(),
+      memo: memo, pageUrl: trail, landingUrl: location.href,
+      submittedAt:new Date().toISOString()
+    };
+    try{
+      if(ENDPOINT && !ENDPOINT.startsWith('PASTE')){
+        await fetch(ENDPOINT,{method:'POST',mode:'no-cors',
+          headers:{'Content-Type':'application/x-www-form-urlencoded'},
+          body:new URLSearchParams(data).toString()});
+      }
+      if(window.fbq) fbq('track','Lead',{content_name:'바닥도장공사 '+thick});
+      if(window.gtag && TRACK.googleAdsId && TRACK.gadsConversionLabel){
+        gtag('event','conversion',{send_to:TRACK.googleAdsId+'/'+TRACK.gadsConversionLabel,value:1,currency:'KRW'});
+      }
+      form.reset();
+      boxes[boxes.length-1].checked = true;
+      show('신청이 접수되었습니다. 빠르게 연락드리겠습니다!','ok');
+    }catch(err){
+      show('전송 중 오류가 발생했습니다. '+CFG.phone+' 로 전화 주세요.','err');
+    }finally{
+      btn.disabled=false; btn.textContent='무료 견적 신청하기';
+    }
+  });
+})();
+</script>
+
+<!-- ====================================================================== -->
+<!--  [3] 광고 픽셀                                                          -->
+<!-- ====================================================================== -->
+<script>
+(function(){
+  if(TRACK.metaPixel){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',TRACK.metaPixel); fbq('track','PageView');
+  }
+  const gid = TRACK.googleAdsId || TRACK.ga4Id;
+  if(gid){
+    const s=document.createElement('script'); s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+gid; document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments)};
+    gtag('js',new Date());
+    if(TRACK.ga4Id)       gtag('config',TRACK.ga4Id);
+    if(TRACK.googleAdsId) gtag('config',TRACK.googleAdsId);
+  }
+})();
+</script>
+</body>
+</html>
