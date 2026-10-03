@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>공장 바닥 에폭시 도장공사 | 평당 93,628원~ · 정부지원 70~90% - 주영산업</title>
-<meta name="description" content="전문도장건설면허 보유, 하청 없이 직접 시공합니다. 0.3mm~3.0mm 두께 선택, 평당 93,628원부터. 현장 실측·견적 무료. 2026 클린사업·경기도 작업환경개선사업으로 최대 90% 지원." />
-<meta property="og:title" content="공장 바닥 에폭시 도장공사 · 정부지원 70~90%" />
+<title>공장 바닥 에폭시 도장공사 | 평당 93,628원~ · 정부지원 최대 70% - 주영산업</title>
+<meta name="description" content="전문도장건설면허 보유, 하청 없이 직접 시공합니다. 0.3mm~3.0mm 두께 선택, 평당 93,628원부터. 현장 실측·견적 무료. 2026 클린사업 최대 70% 지원. 사업자등록증 1장과 현장사진 4~6장이면 무료 검토." />
+<meta property="og:title" content="공장 바닥 에폭시 도장공사 · 정부지원 최대 70%" />
 <meta property="og:description" content="평당 93,628원부터. 전문도장건설면허 직접시공. 실측·견적 무료." />
 <meta property="og:image" content="images/hero.jpg" />
 <meta property="og:type" content="website" />
@@ -62,7 +62,9 @@ const CFG = {
     ["하청을 주시나요?",
      "아닙니다. 주영산업은 <b>전문도장건설면허를 직접 보유</b>하고 있어 하청 없이 <b>자사 인력이 직접 시공</b>합니다. 하자 발생 시 책임 소재가 분명합니다."],
     ["정부지원으로 할 수 있나요?",
-     "가능합니다. <b>2026 안전보건공단 클린사업(지원율 70~90%)</b>과 <b>경기도 작업환경개선사업(80%)</b>으로 바닥도장공사를 진행하는 사업장이 많습니다. 사업자등록증 1장만 보내주시면 <b>신청 가능 여부와 예상 지원금을 무료로 검토</b>해 드립니다."],
+     "가능합니다. <b>2026 안전보건공단 클린사업</b>으로 바닥도장공사를 진행하는 사업장이 많습니다. 지원율은 <b>최대 70%</b>입니다. (경기도 작업환경개선사업은 <b>2028년 시행 예정</b>이라 현재는 신청할 수 없습니다.)"],
+    ["검토받으려면 뭘 보내야 하나요?",
+     "딱 두 가지만 보내주시면 됩니다.<br>① <b>사업자등록증 1장</b><br>② <b>현장 사진 4~6장</b> — <b>바닥 전체가 보이는 사진 2~3장</b>(공장 전경·통로 포함)과 <b>깨진 곳 · 기름이 있는 곳을 가까이 찍은 사진 2~3장</b>입니다.<br>사진이 있어야 보수 범위와 적정 두께를 판단해 <b>지원 가능 여부와 예상 자부담금을 정확히</b> 알려드릴 수 있습니다. 신청서 작성·접수는 저희가 전부 대행합니다."],
     ["색상도 고를 수 있나요?",
      "네. <b>용도별 색상 선택이 가능</b>합니다. 일반 공장은 회색, 식품공장은 녹색을 많이 쓰며 통로·적재구역 <b>안전 구획선 도장</b>도 함께 진행할 수 있습니다."]
   ]
@@ -118,11 +120,14 @@ h2 em{font-style:normal;color:var(--or)}
 
 /* 히어로 */
 .hero{position:relative;background:#0a0d12;color:#fff;overflow:hidden;padding:98px 0 58px}
-.hero .hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28}
+.hero .hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:.9;filter:brightness(1.1) saturate(1.06)}
 .hero::after{content:"";position:absolute;inset:0;
-  background:radial-gradient(900px 520px at 16% 26%,rgba(255,122,26,.2),transparent 62%),
-             linear-gradient(180deg,rgba(10,13,18,.82),rgba(10,13,18,.96))}
-.hero .wrap{position:relative;z-index:2}
+  background:linear-gradient(104deg,rgba(8,11,16,.88) 0%,rgba(8,11,16,.62) 44%,rgba(8,11,16,.2) 100%),
+             linear-gradient(180deg,rgba(8,11,16,.5) 0%,rgba(8,11,16,.1) 34%,rgba(8,11,16,.68) 100%)}
+@media(max-width:700px){.hero::after{
+  background:linear-gradient(180deg,rgba(8,11,16,.78) 0%,rgba(8,11,16,.55) 40%,rgba(8,11,16,.8) 100%)}}
+.hero .wrap{position:relative;z-index:2;text-shadow:0 2px 14px rgba(0,0,0,.6)}
 .h-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,122,26,.18);
   border:1px solid rgba(255,154,77,.5);color:#ffc08a;font-size:13px;font-weight:800;
   padding:7px 15px;border-radius:999px;margin-bottom:18px}
@@ -303,6 +308,33 @@ h2 em{font-style:normal;color:var(--or)}
 .gv-c dd.hi{color:var(--bl);font-weight:900}
 .gv-note{max-width:860px;margin:18px auto 0;text-align:center;font-size:13.5px;color:var(--mute);line-height:1.8}
 .gv-note b{color:var(--ink)}
+.gv-c.soon{background:#fbfcfd;opacity:.92}
+.gv-c.soon h4{font-size:17px;display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.sbdg{font-size:11px;font-weight:900;letter-spacing:.02em;color:#8a6d1f;background:#fdf3d6;
+  border:1px solid #efd99a;border-radius:7px;padding:3px 8px;white-space:nowrap}
+.soonnote{margin-top:13px;font-size:12.4px;color:var(--mute);font-weight:600;line-height:1.65;
+  background:#f4f6f8;border-radius:9px;padding:10px 12px}
+.soonnote b{color:var(--or-dk)}
+
+/* 필요서류 */
+.docs{max-width:860px;margin:26px auto 0;background:#fff;border:1px solid var(--line);
+  border-radius:18px;padding:26px;box-shadow:var(--sh)}
+@media(max-width:520px){.docs{padding:22px 18px}}
+.docs .dh{text-align:center;font-size:clamp(17px,3.2vw,21px);font-weight:900;
+  letter-spacing:-.035em;margin-bottom:20px}
+.docs .dh b{color:var(--or)}
+.dgrid{display:grid;grid-template-columns:1fr 1.25fr;gap:12px}
+@media(max-width:640px){.dgrid{grid-template-columns:1fr}}
+.dc{background:#fbfcfd;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;position:relative}
+.dc .dn{font-size:11px;font-weight:900;letter-spacing:.14em;color:var(--or)}
+.dc h4{font-size:16.5px;font-weight:900;letter-spacing:-.035em;margin:4px 0 9px}
+.dc p{font-size:13.6px;color:#38404c;font-weight:700;line-height:1.55;margin-bottom:9px}
+.dc p:last-child{margin-bottom:0}
+.dc p b{color:var(--or-dk)}
+.dc p span{font-size:12.6px;color:var(--mute);font-weight:600}
+.dwhy{margin-top:16px;background:#fff8f2;border:1px dashed var(--or2);border-radius:12px;
+  padding:14px 18px;text-align:center;font-size:13.6px;color:#5b4631;font-weight:600;line-height:1.7}
+.dwhy b{color:var(--or-dk);font-weight:800}
 
 /* FAQ */
 .faq{max-width:840px;margin:0 auto}
@@ -407,7 +439,7 @@ footer a{color:#c9d1dc}
 
     <div class="h-chips">
       <span class="chip">두께 <b>0.3 ~ 3.0mm</b> 선택</span>
-      <span class="chip">정부지원 <b>70 ~ 90%</b></span>
+      <span class="chip">정부지원 <b>최대 70%</b></span>
       <span class="chip">실측·견적 <b>전액 무료</b></span>
       <span class="chip">사업자등록증 <b>1장</b>이면 검토</span>
     </div>
@@ -417,7 +449,7 @@ footer a{color:#c9d1dc}
 <div class="band"><div class="in">
   <div class="c"><div class="n">평당 93,628원~</div><div class="l">0.3mm 코팅형 기준</div></div>
   <div class="c"><div class="n">0.3 ~ 3.0mm</div><div class="l">4가지 두께 선택</div></div>
-  <div class="c"><div class="n">70 ~ 90%</div><div class="l">정부지원 비율</div></div>
+  <div class="c"><div class="n">최대 70%</div><div class="l">정부지원 비율</div></div>
   <div class="c"><div class="n">직접시공</div><div class="l">전문도장건설면허 보유</div></div>
 </div></div>
 
@@ -457,7 +489,7 @@ footer a{color:#c9d1dc}
       <div class="cout">
         <div class="main"><div class="k">예상 공사비 (공급가액)</div><div class="v" id="oTot">-</div></div>
         <div><div class="k">부가세 10% (별도)</div><div class="v" id="oVat">-</div></div>
-        <div class="gov"><div class="k">정부지원 70% 적용 시 자부담</div><div class="v" id="oSelf">-</div></div>
+        <div class="gov"><div class="k">정부지원 최대 70% 적용 시 자부담</div><div class="v" id="oSelf">-</div></div>
         <div><div class="k">㎡당 단가</div><div class="v" id="oM2">-</div></div>
       </div>
 
@@ -546,7 +578,7 @@ footer a{color:#c9d1dc}
     <div class="sec-head fadein">
       <span class="eyebrow">SUPPORT</span>
       <h2>정부지원사업으로 <em>도입하세요</em></h2>
-      <p>신청서류부터 시공까지 풀패키지로 대행합니다.</p>
+      <p>사업자등록증 1장 + 현장사진 4~6장이면 무료로 검토해 드립니다.</p>
     </div>
     <div class="gv fadein">
       <div class="gv-c">
@@ -554,25 +586,47 @@ footer a{color:#c9d1dc}
         <h4>2026 클린사업</h4>
         <div class="s">안전보건공단 작업환경개선 지원사업</div>
         <dl>
-          <dt>지원율</dt><dd class="hi">70 ~ 90%</dd>
+          <dt>지원율</dt><dd class="hi">최대 70%</dd>
           <dt>대상</dt><dd>고위험 작업장</dd>
           <dt>신청시기</dt><dd>상시 (마감 임박)</dd>
         </dl>
       </div>
-      <div class="gv-c">
+      <div class="gv-c soon">
         <div class="k">PROGRAM 02 · GYEONGGI</div>
-        <h4>2026 경기도 작업환경개선사업</h4>
+        <h4>경기도 작업환경개선사업 <span class="sbdg">2028년 예정</span></h4>
         <div class="s">경기도 제조업 사업장 대상</div>
         <dl>
           <dt>지원율</dt><dd class="hi">80%</dd>
           <dt>대상</dt><dd>경기도 제조업</dd>
-          <dt>신청시기</dt><dd>8월 (예정)</dd>
+          <dt>시행시기</dt><dd>2028년 (예정)</dd>
         </dl>
+        <div class="soonnote">※ 현재는 신청할 수 없습니다. 지금은 <b>클린사업(최대 70%)</b>으로 진행합니다.</div>
       </div>
     </div>
-    <div class="gv-note fadein"><b>사업자등록증 1장만 보내주세요.</b><br>
-      신청 가능 여부 · 예상 지원금 · 자부담금을 무료로 검토해 드립니다.<br>
-      필요서류(사업자등록증·소상공인확인서·납세증명서·4대보험 가입자명부·재무제표)는 저희가 안내·대행합니다.</div>
+
+    <div class="docs fadein">
+      <div class="dh">검토는 <b>이 2가지</b>만 보내주시면 끝납니다</div>
+      <div class="dgrid">
+        <div class="dc">
+          <div class="dn">01</div>
+          <h4>사업자등록증 1장</h4>
+          <p>사진으로 찍어 보내주셔도 됩니다. 지원 대상 여부·업종 확인용입니다.</p>
+        </div>
+        <div class="dc">
+          <div class="dn">02</div>
+          <h4>현장 사진 4~6장</h4>
+          <p><b>바닥 전체가 보이는 사진 2~3장</b><br><span>공장 전경 · 통로가 같이 나오게</span></p>
+          <p><b>깨진 곳 · 기름 있는 곳 2~3장</b><br><span>문제 부위를 가까이에서</span></p>
+        </div>
+      </div>
+      <div class="dwhy">사진이 있어야 <b>보수 범위와 적정 두께</b>를 판단해
+        지원 가능 여부 · 예상 자부담금을 <b>정확히</b> 알려드릴 수 있습니다.</div>
+    </div>
+
+    <div class="gv-note fadein">
+      나머지 서류(소상공인확인서 · 납세증명서 · 4대보험 가입자명부 · 재무제표)는
+      <b>저희가 안내하고 신청·접수까지 대행</b>합니다.<br>
+      검토 · 상담 · 실측 · 견적 <b>전부 무료</b>입니다.</div>
   </div>
 </section>
 
@@ -594,7 +648,7 @@ footer a{color:#c9d1dc}
       <div class="fm-hd">
         <div class="k">FREE ESTIMATE</div>
         <h3>무료 실측 · 견적 신청</h3>
-        <p>상담 · 실측 · 견적 전부 무료입니다. 영업일 1일 이내 연락드립니다.</p>
+        <p>상담 · 실측 · 견적 전부 무료입니다. 영업일 1일 이내 연락드립니다.<br><b style="color:#ffc08a">사업자등록증 1장 + 현장사진 4~6장</b>은 연락드릴 때 안내해 드립니다.</p>
       </div>
       <div class="fm-bd">
         <form id="leadForm" autocomplete="on" novalidate>
@@ -689,7 +743,7 @@ footer a{color:#c9d1dc}
     <div style="margin-top:14px;font-size:12.4px;color:#6b7684">
       ※ 모든 금액은 공급가액 기준이며 부가세는 별도입니다. 세금계산서는 의무 발행됩니다.<br>
       ※ 평당 단가는 1평 = 3.3058㎡로 환산한 참고 금액이며, 실제 견적은 현장 실측 후 ㎡ 단가 기준으로 확정됩니다.<br>
-      ※ 정부지원사업의 지원 대상·비율·한도는 각 사업 공고 및 심사 결과에 따라 달라질 수 있습니다.
+      ※ 클린사업 지원율은 최대 70%이며, 지원 대상·비율·한도는 사업 공고 및 심사 결과에 따라 달라질 수 있습니다.<br>※ 경기도 작업환경개선사업은 2028년 시행 예정으로 현재 신청이 불가합니다.
     </div>
   </div>
 </footer>
