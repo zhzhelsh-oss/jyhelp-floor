@@ -81,8 +81,7 @@ const ENDPOINT = "https://script.google.com/macros/s/AKfycbx_gXSZ2MzMYIs6xzHOFOA
 
 // 광고 추적
 const TRACK = { metaPixel:"1007851345549014", googleAdsId:"AW-18312813955",
-                gadsConversionLabel:"6Y86CNLcgc4cEIO7nZxE",   // 공통: 리드 양식 제출
-                gadsQuoteLabel:"s8s2CMn5rLUdEIO7nZxE",        // 에폭시 전용: 에폭시 견적신청
+                gadsConversionLabel:"s8s2CMn5rLUdEIO7nZxE",   // 에폭시 견적신청 (품목 전용 전환)
                 ga4Id:"" };
 </script>
 
@@ -998,9 +997,6 @@ footer a{color:#c9d1dc}
       if(window.fbq) fbq('track','Lead',{content_name:'바닥도장공사 '+thick});
       if(window.gtag && TRACK.googleAdsId && TRACK.gadsConversionLabel){
         gtag('event','conversion',{send_to:TRACK.googleAdsId+'/'+TRACK.gadsConversionLabel,value:1,currency:'KRW'});
-      }
-      if(window.gtag && TRACK.googleAdsId && TRACK.gadsQuoteLabel){   // 에폭시 견적신청 (품목별 전용 전환)
-        gtag('event','conversion',{send_to:TRACK.googleAdsId+'/'+TRACK.gadsQuoteLabel,value:1,currency:'KRW'});
       }
       form.reset();
       boxes[boxes.length-1].checked = true;
